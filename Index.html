@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exemplo Tailwind</title>
+        <script src="https://cdn.tailwindcss.com"></script> <!-- CDN do Tailwind -->
+    </head>
+    <body class="flex items-center justify-center min-h-screen">
+        <div class="bg-blue-300 p-8 rounded-[25px] shadow-md w-96 text-center border-4 border-blue-500">
+            <h1 class="text-2xl font-bold mb-4">Bem-vindo à BoLucas!</h1>
+            <p class="mb-6 text-[18px]">BoLucas, só que em Tailwind 😮😮😮</p>
+            <a href="./Home.html">
+                <button class="bg-yellow-300 text-black px-4 py-2 rounded-[25px] hover:bg-red-600 hover:text-white transition text-[20px]">Entrar</button>
+            </a>
+        </div>
+    </body>
+</html>
+
+<!-- Como funciona cada classe do tailwind -->
+
+<!-- bg-gray-100, bg-white, bg-green-600: Cor de fundo de um elemento, com escala de cores, sendo 100 mais claro, e 600 mais escuro (quanto maior o valor, mais escuro a cor e quanto menor o valor, mais claro é a cor). -->
+
+<!-- p-8, px-4, py-2: Controles de espaçamento interno. p-8 sendo padding em todos os lados, px-4 sendo o padding na horizontal e o py-2 sendo o padding na vertical. -->
+
+<!-- rounded-xl, rounded: Aplica bordas arrendondadas no elemento, quando mais "xl", mais arredondado fica. -->
+
+<!-- shadow-md: Aplica sombras ao redor do elemento, dando profundidade. -->
+
+<!-- w-96: Define a largura do elemento (w-96 = 384px [aprox.]) -->
+
+<!-- text-center, text-2xl, text-gray-600: Controlam alinhamento, tamanho e cor do texto. text-center deixa o texto centralizado, text-2xl deixa o texto com uma fonte maior, text-gray-600 aplica a cor do texto em cinza. -->
+
+<!-- font-bold: Deixa o texto em negrito. -->
+
+<!-- hover:bg-green-700: Altera a cor de fundo do botão ao passar o mouse em cima do mesmo. -->
+
+<!-- transition: Aplica uma transição suave no hover do botão (ou em algum outro estado) -->
+
+<!-- flex, items-center, justify-center, min-h-screen: Definem um layout responsivo e centralizado. flex ativa o modelo flexbox, items-center centraliza verticalmente, justify-center centraliza horizontalmente, min-h-screen define a altura mínima como 100% da tela. -->
