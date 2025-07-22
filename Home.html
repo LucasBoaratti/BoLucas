@@ -45,63 +45,48 @@
         <main class="flex flex-col">
             <h1 class="text-center text-4xl py-5 font-bold bg-yellow-400">🎂 Bem vindo(a) à BoLucas! 🎂</h1>
             <section class="bg-yellow-400 p-10 flex">
-                <p class="text-justify text-[20px] text-black">O cantinho dos bolos feitos com carinho e sabor de verdade. Aqui, cada receita é pensada para transformar momentos simples em grandes memórias. Nossos bolos são preparados com ingredientes selecionados, uma pitada de criatividade e muito amor — porque acreditamos que todo dia merece um pedacinho de felicidade. Do tradicional ao inusitado, temos o bolo perfeito esperando por você. <br>(Texto gerado por IA)</p>
+                <p class="text-justify text-[20px] text-black">O cantinho dos bolos feitos com carinho e sabor de verdade. Aqui, cada receita é pensada para transformar momentos simples em grandes memórias. Nossos bolos são preparados com ingredientes selecionados, uma pitada de criatividade e muito amor — porque acreditamos que todo dia merece um pedacinho de felicidade. Do tradicional ao inusitado, temos o bolo perfeito esperando por você.</p>
             </section>
-            <section>
-                <h2 class="text-[30px] text-center mt-[30px] mb-[30px]">Conheça nossos melhores bolos!</h2>
-                <section class="flex flex-wrap gap-x-10 justify-center items-center mb-[30px]">
-                    <section class="flex justify-center items-center mb-[30px]">
-                        <div class="bg-pink-600 p-5 flex flex-col justify-center items-center rounded-[25px] w-[380px]">
-                            <h2 class="text-[35px] text-white text-center">Bolos de chocolate</h2>
-                            <img src="https://www.sabornamesa.com.br/media/k2/items/cache/7a0c9d8bd9eadf879f0011817e8c2396_XL.jpg" alt="Imagem de um bolo de chocolate com kitkat em sua volta e com confetes coloridos em cima. 😋" class="w-[300px] h-[250px] rounded-[25px]">
-                            <a href="./Bolos.html">
-                                <button type="button" class="mt-[20px] bg-yellow-300 hover:bg-white p-2 rounded-[25px]">Ver bolos</button>
-                            </a>         
-                        </div>
+            <section class="my-[40px]">
+                <h2 class="text-[25px] text-center mb-[30px]">Confira os melhores bolos da BoLucas!</h2>
+                <!-- Carrossel de bolos -->
+                <section class="flex justify-center items-center gap-2">
+                    <div class="mr-[150px]">
+                        <img src="./Imagens/Bolo1.png" alt="Bolo rosa de morango com velas roxas e estrelas amarelas, além de ter confetes rosa e roxo." class="w-[300px] h-[350px]">
+                    </div>
+                    <button type="button" class="text-5xl bg-transparent border-none cursor-pointer text-gray hover:text-black mr-[30px]" onclick="voltar_imagem()">⟨</button>
+                    <section class="relative w-[500px] h-[400px] overflow-hidden">
+                        <img src="https://www.sabornamesa.com.br/media/k2/items/cache/7a0c9d8bd9eadf879f0011817e8c2396_XL.jpg" alt="Imagem de um bolo de chocolate com kitkat em sua volta e com confetes coloridos em cima. 😋" class="absolute top-0 left-0 opacity-100 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="imagem1">
+                        <img src="https://www.sabornamesa.com.br/media/k2/items/cache/652db931b03434af33c6ed02458509c9_XL.jpg" alt="Imagem de um bolo de chocolate com morango com bolinhas de brigadeiro em cima e alguns morangos espalhados em cima do bolo. E com decorações de asa de borboleta nos lados. 😋" class="absolute top-0 left-0 opacity-0 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="imagem2">
+                        <img src="https://jpimg.com.br/uploads/2023/11/3-bolos-caseiros-incriveis-e-faceis-de-preparar.jpg" alt="Imagem de um bolo de cenoura laranja com cobertura de chocolate. 😋" class="absolute top-0 left-0 opacity-0 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="imagem3">
+                        <img src="https://lh3.googleusercontent.com/proxy/pXJ2_SYVJUvDfJNNqJT5iPmqsyWbe-2bz8ArrVZIcBYLKsSJZjyj66eMXDc1VCls0Dv3hls-oRAuDmjDrw1NFineIiudeJiupdqol7EDPxwD5A" alt="Imagem de um bolo de morango com recheio de morango, vermelho, em cima e escorrendo pelos lados. No topo do bolo, tem alguns morangos e alguns cremes de chantilly, além de uma cobertura de chocolate com detalhes, fazendo dois olhinhos e uma boca, simulando uma carinha feliz. 😋" class="absolute top-0 left-0 opacity-0 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="imagem4">
+                        <img src="https://s2-receitas.glbimg.com/KGCJzQKGEe25N5klcU01sKtnocM=/0x0:400x300/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2013/01/18/15_13_21_366_mousse_maracuja400300.jpg" alt="Imagem de um bolo de maracujá, com chantilly branco e em cima, possui uma cobertura de maracujá na cor amarela com sementes pretas, vindo do próprio maracujá. 😋" class="absolute top-0 left-0 opacity-0 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="imagem5">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5J6il_vjEJbJ-M2XPLAxTrnLRKPPSPKmow&s" alt="Imagem de um bolo de limão na cor laranja, com uma cobertura de limão na cor verde descendo pelo bolo vindo de cima do mesmo, além de ter alguns farelos de limão, também na cor verde, em cima do bolo. 😋" class="absolute top-0 left-0 opacity-0 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="imagem6">
                     </section>
-                    <section class="flex justify-center items-center mb-[30px]">
-                        <div class="bg-pink-600 p-5 flex flex-col justify-center items-center rounded-[25px] w-[380px]">
-                            <h2 class="text-[35px] text-white text-center">Bolos de chocorango</h2>
-                            <img src="https://www.sabornamesa.com.br/media/k2/items/cache/652db931b03434af33c6ed02458509c9_XL.jpg" alt="Imagem de um bolo de chocolate com morango com bolinhas de brigadeiro em cima e alguns morangos espalhados em cima do bolo. E com decorações de asa de borboleta nos lados. 😋" class="w-[300px] h-[250px] rounded-[25px]">
-                            <a href="./Bolos.html">
-                                <button type="button" class="mt-[20px] bg-yellow-300 hover:bg-white p-2 rounded-[25px]">Ver bolos</button>
-                            </a> 
+                    <button type="button" class="text-5xl bg-transparent border-none cursor-pointer text-gray hover:text-black ml-[30px]" onclick="avancar_imagem()">⟩</button>
+                    <div class="ml-[150px]">
+                        <img src="./Imagens/Bolo2.png" alt="Bolo de baunilha com cobertura de chocolate e decorado com confetes coloridos, bluberrys e algumas velas coloridas em cima." class="w-[300px] h-[350px]">
+                    </div>
+                </section>
+                <!-- Carrossel de itens de festa -->
+                <section class="flex flex-col flex-wrap gap-x-10 justify-center items-center mt-[60px]">
+                    <h2 class="text-[25px] text-center mb-[30px]">Os itens de festa com os melhores preços!</h2>
+                    <section class="flex justify-center items-center gap-2">
+                        <div class="mr-[150px]">
+                            <img src="./Imagens/Gato1.png" alt="Gato preto com um bolo de baunilha com chantilly azul e rosa e velas da mesma cor." class="w-[250px] h-[350px]">
                         </div>
-                    </section>
-                    <section class="flex justify-center items-center mb-[30px]">
-                        <div class="bg-pink-600 p-5 flex flex-col justify-center items-center rounded-[25px] w-[380px]">
-                            <h2 class="text-[35px] text-white text-center">Bolos de cenoura</h2>
-                            <img src="https://jpimg.com.br/uploads/2023/11/3-bolos-caseiros-incriveis-e-faceis-de-preparar.jpg" alt="Imagem de um bolo de cenoura laranja com cobertura de chocolate. 😋" class="w-[300px] h-[250px] rounded-[25px]">
-                            <a href="./Bolos.html">
-                                <button type="button" class="mt-[20px] bg-yellow-300 hover:bg-white p-2 rounded-[25px]">Ver bolos</button>
-                            </a> 
-                        </div>
-                    </section>
-                    <section class="flex justify-center items-center mb-[30px]">
-                        <div class="bg-pink-600 p-5 flex flex-col justify-center items-center rounded-[25px] w-[380px]">
-                            <h2 class="text-[35px] text-white text-center">Bolos de morango</h2>
-                            <img src="https://lh3.googleusercontent.com/proxy/pXJ2_SYVJUvDfJNNqJT5iPmqsyWbe-2bz8ArrVZIcBYLKsSJZjyj66eMXDc1VCls0Dv3hls-oRAuDmjDrw1NFineIiudeJiupdqol7EDPxwD5A" alt="Imagem de um bolo de morango com recheio de morango, vermelho, em cima e escorrendo pelos lados. No topo do bolo, tem alguns morangos e alguns cremes de chantilly, além de uma cobertura de chocolate com detalhes, fazendo dois olhinhos e uma boca, simulando uma carinha feliz. 😋" class="w-[300px] h-[250px] rounded-[25px]">
-                            <a href="./Bolos.html">
-                                <button type="button" class="mt-[20px] bg-yellow-300 hover:bg-white p-2 rounded-[25px]">Ver bolos</button>
-                            </a> 
-                        </div>
-                    </section>
-                    <section class="flex justify-center items-center mb-[30px]">
-                        <div class="bg-pink-600 p-5 flex flex-col justify-center items-center rounded-[25px] w-[380px]">
-                            <h2 class="text-[35px] text-white text-center">Bolos de maracujá</h2>
-                            <img src="https://s2-receitas.glbimg.com/KGCJzQKGEe25N5klcU01sKtnocM=/0x0:400x300/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2013/01/18/15_13_21_366_mousse_maracuja400300.jpg" alt="Imagem de um bolo de maracujá, com chantilly branco e em cima, possui uma cobertura de maracujá na cor amarela com sementes pretas, vindo do próprio maracujá. 😋" class="w-[300px] h-[250px] rounded-[25px]">
-                            <a href="./Bolos.html">
-                                <button type="button" class="mt-[20px] bg-yellow-300 hover:bg-white p-2 rounded-[25px]">Ver bolos</button>
-                            </a> 
-                        </div>
-                    </section>
-                    <section class="flex justify-center items-center mb-[30px]">
-                        <div class="bg-pink-600 p-5 flex flex-col justify-center items-center rounded-[25px] w-[380px]">
-                            <h2 class="text-[35px] text-white text-center">Bolos de limão</h2>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5J6il_vjEJbJ-M2XPLAxTrnLRKPPSPKmow&s" alt="Imagem de um bolo de limão na cor laranja, com uma cobertura de limão na cor verde descendo pelo bolo vindo de cima do mesmo, além de ter alguns farelos de limão, também na cor verde, em cima do bolo. 😋" class="w-[300px] h-[250px] rounded-[25px]">
-                            <a href="./Bolos.html">
-                                <button type="button" class="mt-[20px] bg-yellow-300 hover:bg-white p-2 rounded-[25px]">Ver bolos</button>
-                            </a>  
+                        <button type="button" class="text-5xl bg-transparent border-none cursor-pointer text-gray hover:text-black mr-[30px]" onclick="voltar_imagem_carrossel()">⟨</button>
+                        <section class="relative w-[500px] h-[400px] overflow-hidden">
+                            <img src="https://cdn.awsli.com.br/2500x2500/1896/1896128/produto/94957805/com-ynjszke89z.jpg" alt="Confetes redondos coloridos." class="absolute top-0 left-0 opacity-100 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="img1">
+                            <img src="https://images.unsplash.com/photo-1600566209579-dd9691ed2ff0?q=80&w=707&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Velas acesas na mesa de madeira marrom." class="absolute top-0 left-0 opacity-0 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="img2">
+                            <img src="https://plus.unsplash.com/premium_photo-1666739030707-67446b9a8c21?q=80&w=860&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Um grupo de garfos e colheres de plastico em uma superficie rosa." class="absolute top-0 left-0 opacity-0 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="img3">
+                            <img src="https://images.unsplash.com/photo-1479750178258-aec5879046ce?q=80&w=799&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Balões de bolinhas de cores variadas." class="absolute top-0 left-0 opacity-0 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="img4">
+                            <img src="https://images.unsplash.com/photo-1727021024931-90c226e8448d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Um grupo de pratos brancos sentados uns sobre os outros." class="absolute top-0 left-0 opacity-0 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="img5">
+                            <img src="https://plus.unsplash.com/premium_photo-1675881738040-a50682dbf627?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Um grupo de chapeus de aniversário em cima de uma mesa." class="absolute top-0 left-0 opacity-0 transition-opacity duration-500 w-full h-[400px] border-2 border-black" id="img6">
+                        </section>
+                        <button type="button" class="text-5xl bg-transparent border-none cursor-pointer text-gray hover:text-black ml-[30px]" onclick="avancar_imagem_carrossel()">⟩</button>
+                        <div class="ml-[150px]">
+                            <img src="./Imagens/Gato2.png" alt="Gato bege com um chapéu de festa e um suco de laranja. Na frente, um bolo de chocolate com cobertura de limão e gotas de chocolate branco, além de ter velas laranjas." class="w-[250px] h-[350px]">
                         </div>
                     </section>
                 </section>
@@ -123,6 +108,71 @@
                 <p>19 99999-9999</p>
             </div>
         </footer>
+        <script>
+            // Carrossel de bolos
+
+            const imagens = [
+                document.getElementById("imagem1"),
+                document.getElementById("imagem2"),
+                document.getElementById("imagem3"),
+                document.getElementById("imagem4"),
+                document.getElementById("imagem5"),
+                document.getElementById("imagem6"),
+            ];
+
+            let imagemAtiva = 0;
+
+            function atualizar_carrossel() {
+                imagens.forEach((imagem, index) => {
+                    imagem.classList.toggle("opacity-100", index === imagemAtiva);
+                    imagem.classList.toggle("opacity-0", index !== imagemAtiva);
+                });
+            }
+
+            function voltar_imagem() {
+                imagemAtiva = (imagemAtiva - 1 + imagens.length) % imagens.length;
+
+                atualizar_carrossel();
+            }
+
+            function avancar_imagem() {
+                imagemAtiva = (imagemAtiva + 1) % imagens.length;
+
+                atualizar_carrossel();
+            }
+
+            // Carrossel de itens de festa
+
+            const imagensItensFesta = [
+                document.getElementById("img1"),
+                document.getElementById("img2"),
+                document.getElementById("img3"),
+                document.getElementById("img4"),
+                document.getElementById("img5"),
+                document.getElementById("img6"),
+            ];
+
+            let imagemAtivaCarrossel = 0;
+
+            function atualizar_carrossel_festa() {
+                imagensItensFesta.forEach((imagens, indice) => {
+                    imagens.classList.toggle("opacity-100", indice === imagemAtivaCarrossel);
+                    imagens.classList.toggle("opacity-0", indice !== imagemAtivaCarrossel);
+                });
+            }
+
+            function voltar_imagem_carrossel() {
+                imagemAtivaCarrossel = (imagemAtivaCarrossel - 1 + imagensItensFesta.length) % imagensItensFesta.length;
+
+                atualizar_carrossel_festa();
+            }
+
+            function avancar_imagem_carrossel() {
+                imagemAtivaCarrossel = (imagemAtivaCarrossel + 1) % imagensItensFesta.length;
+
+                atualizar_carrossel_festa();
+            }
+        </script>
     </body>
 </html>
 
